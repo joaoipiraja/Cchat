@@ -1,0 +1,1001 @@
+The system is: Darwin - 20.1.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is AppleClang, found in "/Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/3.19.4/CompilerIdC/CMakeCCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0ae3b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0ae3b.dir/build.make CMakeFiles/cmTC_0ae3b.dir/build
+Building C object CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk   -v -Wl,-v -o CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.19.4/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 12.0.0 (clang-1200.0.32.27)
+Target: x86_64-apple-darwin20.1.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx11.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=11.0 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 609.6 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -fdebug-compilation-dir /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fobjc-runtime=macosx-11.0.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.19.4/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.0 (clang-1200.0.32.27) default target x86_64-apple-darwin20.1.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_0ae3b
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ae3b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o -o cmTC_0ae3b 
+Apple clang version 12.0.0 (clang-1200.0.32.27)
+Target: x86_64-apple-darwin20.1.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 11.0.0 11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -o cmTC_0ae3b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-609.7
+BUILD 18:10:07 Oct 19 2020
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  end of search list found
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_0ae3b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0ae3b.dir/build.make CMakeFiles/cmTC_0ae3b.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk   -v -Wl -v -o CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.19.4/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Apple clang version 12.0.0 (clang-1200.0.32.27)]
+  ignore line: [Target: x86_64-apple-darwin20.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx11.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=11.0 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 609.6 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -fdebug-compilation-dir /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fobjc-runtime=macosx-11.0.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.19.4/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 12.0.0 (clang-1200.0.32.27) default target x86_64-apple-darwin20.1.0]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_0ae3b]
+  ignore line: [/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ae3b.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o -o cmTC_0ae3b ]
+  ignore line: [Apple clang version 12.0.0 (clang-1200.0.32.27)]
+  ignore line: [Target: x86_64-apple-darwin20.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 11.0.0 11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -o cmTC_0ae3b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [11.0.0] ==> ignore
+    arg [11.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0ae3b] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_0ae3b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks]
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7036e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7036e.dir/build.make CMakeFiles/cmTC_7036e.dir/build
+Building C object CMakeFiles/cmTC_7036e.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -o CMakeFiles/cmTC_7036e.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7036e
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7036e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7036e.dir/CheckIncludeFile.c.o -o cmTC_7036e 
+
+
+
+Determining if the getrusage exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1068d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1068d.dir/build.make CMakeFiles/cmTC_1068d.dir/build
+Building C object CMakeFiles/cmTC_1068d.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -o CMakeFiles/cmTC_1068d.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1068d
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1068d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1068d.dir/CheckSymbolExists.c.o -o cmTC_1068d 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrusage
+  return ((int*)(&getrusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8fd48/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8fd48.dir/build.make CMakeFiles/cmTC_8fd48.dir/build
+Building C object CMakeFiles/cmTC_8fd48.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_8fd48.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8fd48
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fd48.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8fd48.dir/CheckIncludeFile.c.o -o cmTC_8fd48  -lm 
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_af511/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_af511.dir/build.make CMakeFiles/cmTC_af511.dir/build
+Building C object CMakeFiles/cmTC_af511.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_af511.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_af511
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af511.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_af511.dir/CheckIncludeFile.c.o -o cmTC_af511  -lm 
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f4ce6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f4ce6.dir/build.make CMakeFiles/cmTC_f4ce6.dir/build
+Building C object CMakeFiles/cmTC_f4ce6.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_f4ce6.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f4ce6
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4ce6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f4ce6.dir/CheckIncludeFile.c.o -o cmTC_f4ce6  -lm 
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3c719/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3c719.dir/build.make CMakeFiles/cmTC_3c719.dir/build
+Building C object CMakeFiles/cmTC_3c719.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_3c719.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3c719
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c719.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3c719.dir/CheckIncludeFile.c.o -o cmTC_3c719  -lm 
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_016b6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_016b6.dir/build.make CMakeFiles/cmTC_016b6.dir/build
+Building C object CMakeFiles/cmTC_016b6.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_016b6.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_016b6
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_016b6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_016b6.dir/CheckIncludeFile.c.o -o cmTC_016b6  -lm 
+
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_34a00/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_34a00.dir/build.make CMakeFiles/cmTC_34a00.dir/build
+Building C object CMakeFiles/cmTC_34a00.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_34a00.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_34a00
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34a00.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_34a00.dir/CheckIncludeFile.c.o -o cmTC_34a00  -lm 
+
+
+
+Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a4c27/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a4c27.dir/build.make CMakeFiles/cmTC_a4c27.dir/build
+Building C object CMakeFiles/cmTC_a4c27.dir/STDC_HEADERS.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_a4c27.dir/STDC_HEADERS.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CheckIncludeFiles/STDC_HEADERS.c
+Linking C executable cmTC_a4c27
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4c27.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a4c27.dir/STDC_HEADERS.c.o -o cmTC_a4c27  -lm 
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_570a1/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_570a1.dir/build.make CMakeFiles/cmTC_570a1.dir/build
+Building C object CMakeFiles/cmTC_570a1.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_570a1.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_570a1
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_570a1.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_570a1.dir/CheckIncludeFile.c.o -o cmTC_570a1  -lm 
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0eb21/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0eb21.dir/build.make CMakeFiles/cmTC_0eb21.dir/build
+Building C object CMakeFiles/cmTC_0eb21.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_0eb21.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0eb21
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0eb21.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0eb21.dir/CheckIncludeFile.c.o -o cmTC_0eb21  -lm 
+
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_81eb5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_81eb5.dir/build.make CMakeFiles/cmTC_81eb5.dir/build
+Building C object CMakeFiles/cmTC_81eb5.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_81eb5.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_81eb5
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81eb5.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_81eb5.dir/CheckIncludeFile.c.o -o cmTC_81eb5  -lm 
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_114f8/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_114f8.dir/build.make CMakeFiles/cmTC_114f8.dir/build
+Building C object CMakeFiles/cmTC_114f8.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_114f8.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_114f8
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_114f8.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_114f8.dir/CheckIncludeFile.c.o -o cmTC_114f8  -lm 
+
+
+
+Determining if the include file locale.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_82173/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_82173.dir/build.make CMakeFiles/cmTC_82173.dir/build
+Building C object CMakeFiles/cmTC_82173.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_82173.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_82173
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82173.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_82173.dir/CheckIncludeFile.c.o -o cmTC_82173  -lm 
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a64b6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a64b6.dir/build.make CMakeFiles/cmTC_a64b6.dir/build
+Building C object CMakeFiles/cmTC_a64b6.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_a64b6.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a64b6
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a64b6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a64b6.dir/CheckIncludeFile.c.o -o cmTC_a64b6  -lm 
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_df971/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_df971.dir/build.make CMakeFiles/cmTC_df971.dir/build
+Building C object CMakeFiles/cmTC_df971.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_df971.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_df971
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df971.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_df971.dir/CheckIncludeFile.c.o -o cmTC_df971  -lm 
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7ea7/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a7ea7.dir/build.make CMakeFiles/cmTC_a7ea7.dir/build
+Building C object CMakeFiles/cmTC_a7ea7.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_a7ea7.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a7ea7
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7ea7.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a7ea7.dir/CheckIncludeFile.c.o -o cmTC_a7ea7  -lm 
+
+
+
+Determining if the include file sys/cdefs.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e58fc/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e58fc.dir/build.make CMakeFiles/cmTC_e58fc.dir/build
+Building C object CMakeFiles/cmTC_e58fc.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_e58fc.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e58fc
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e58fc.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e58fc.dir/CheckIncludeFile.c.o -o cmTC_e58fc  -lm 
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a3ca6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a3ca6.dir/build.make CMakeFiles/cmTC_a3ca6.dir/build
+Building C object CMakeFiles/cmTC_a3ca6.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_a3ca6.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a3ca6
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3ca6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a3ca6.dir/CheckIncludeFile.c.o -o cmTC_a3ca6  -lm 
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_240ce/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_240ce.dir/build.make CMakeFiles/cmTC_240ce.dir/build
+Building C object CMakeFiles/cmTC_240ce.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_240ce.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_240ce
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_240ce.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_240ce.dir/CheckIncludeFile.c.o -o cmTC_240ce  -lm 
+
+
+
+Determining if the include file xlocale.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ac13a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ac13a.dir/build.make CMakeFiles/cmTC_ac13a.dir/build
+Building C object CMakeFiles/cmTC_ac13a.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_ac13a.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ac13a
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac13a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ac13a.dir/CheckIncludeFile.c.o -o cmTC_ac13a  -lm 
+
+
+
+Determining if the INFINITY exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9747b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9747b.dir/build.make CMakeFiles/cmTC_9747b.dir/build
+Building C object CMakeFiles/cmTC_9747b.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_9747b.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9747b
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9747b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9747b.dir/CheckSymbolExists.c.o -o cmTC_9747b  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef INFINITY
+  return ((int*)(&INFINITY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isinf exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c9c24/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c9c24.dir/build.make CMakeFiles/cmTC_c9c24.dir/build
+Building C object CMakeFiles/cmTC_c9c24.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_c9c24.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c9c24
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9c24.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c9c24.dir/CheckSymbolExists.c.o -o cmTC_c9c24  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isinf
+  return ((int*)(&isinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isnan exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2f08d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2f08d.dir/build.make CMakeFiles/cmTC_2f08d.dir/build
+Building C object CMakeFiles/cmTC_2f08d.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_2f08d.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2f08d
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f08d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2f08d.dir/CheckSymbolExists.c.o -o cmTC_2f08d  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isnan
+  return ((int*)(&isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the nan exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0272b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0272b.dir/build.make CMakeFiles/cmTC_0272b.dir/build
+Building C object CMakeFiles/cmTC_0272b.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_0272b.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_0272b
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0272b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0272b.dir/CheckSymbolExists.c.o -o cmTC_0272b  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef nan
+  return ((int*)(&nan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the snprintf exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_826e2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_826e2.dir/build.make CMakeFiles/cmTC_826e2.dir/build
+Building C object CMakeFiles/cmTC_826e2.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_826e2.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_826e2
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_826e2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_826e2.dir/CheckSymbolExists.c.o -o cmTC_826e2  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vasprintf exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4d580/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4d580.dir/build.make CMakeFiles/cmTC_4d580.dir/build
+Building C object CMakeFiles/cmTC_4d580.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_4d580.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_4d580
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d580.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4d580.dir/CheckSymbolExists.c.o -o cmTC_4d580  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vasprintf
+  return ((int*)(&vasprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsnprintf exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_af019/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_af019.dir/build.make CMakeFiles/cmTC_af019.dir/build
+Building C object CMakeFiles/cmTC_af019.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_af019.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_af019
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af019.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_af019.dir/CheckSymbolExists.c.o -o cmTC_af019  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsnprintf
+  return ((int*)(&vsnprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vprintf exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ebd11/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ebd11.dir/build.make CMakeFiles/cmTC_ebd11.dir/build
+Building C object CMakeFiles/cmTC_ebd11.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_ebd11.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ebd11
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebd11.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ebd11.dir/CheckSymbolExists.c.o -o cmTC_ebd11  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vprintf
+  return ((int*)(&vprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9bffc/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9bffc.dir/build.make CMakeFiles/cmTC_9bffc.dir/build
+Building C object CMakeFiles/cmTC_9bffc.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_9bffc.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9bffc
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bffc.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9bffc.dir/CheckSymbolExists.c.o -o cmTC_9bffc  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the open exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d253c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d253c.dir/build.make CMakeFiles/cmTC_d253c.dir/build
+Building C object CMakeFiles/cmTC_d253c.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_d253c.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d253c
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d253c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d253c.dir/CheckSymbolExists.c.o -o cmTC_d253c  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef open
+  return ((int*)(&open))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the realloc exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dc492/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_dc492.dir/build.make CMakeFiles/cmTC_dc492.dir/build
+Building C object CMakeFiles/cmTC_dc492.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_dc492.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dc492
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc492.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dc492.dir/CheckSymbolExists.c.o -o cmTC_dc492  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef realloc
+  return ((int*)(&realloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setlocale exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_809de/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_809de.dir/build.make CMakeFiles/cmTC_809de.dir/build
+Building C object CMakeFiles/cmTC_809de.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_809de.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_809de
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_809de.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_809de.dir/CheckSymbolExists.c.o -o cmTC_809de  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setlocale
+  return ((int*)(&setlocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_317cf/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_317cf.dir/build.make CMakeFiles/cmTC_317cf.dir/build
+Building C object CMakeFiles/cmTC_317cf.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_317cf.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_317cf
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_317cf.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_317cf.dir/CheckSymbolExists.c.o -o cmTC_317cf  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncasecmp exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_91c37/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_91c37.dir/build.make CMakeFiles/cmTC_91c37.dir/build
+Building C object CMakeFiles/cmTC_91c37.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_91c37.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_91c37
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91c37.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_91c37.dir/CheckSymbolExists.c.o -o cmTC_91c37  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strdup exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a8b7b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a8b7b.dir/build.make CMakeFiles/cmTC_a8b7b.dir/build
+Building C object CMakeFiles/cmTC_a8b7b.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_a8b7b.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a8b7b
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8b7b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a8b7b.dir/CheckSymbolExists.c.o -o cmTC_a8b7b  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strdup
+  return ((int*)(&strdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_95a87/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_95a87.dir/build.make CMakeFiles/cmTC_95a87.dir/build
+Building C object CMakeFiles/cmTC_95a87.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_95a87.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_95a87
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95a87.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_95a87.dir/CheckSymbolExists.c.o -o cmTC_95a87  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsyslog exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4d2e2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4d2e2.dir/build.make CMakeFiles/cmTC_4d2e2.dir/build
+Building C object CMakeFiles/cmTC_4d2e2.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_4d2e2.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_4d2e2
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d2e2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4d2e2.dir/CheckSymbolExists.c.o -o cmTC_4d2e2  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <syslog.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsyslog
+  return ((int*)(&vsyslog))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoll exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_08a1a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_08a1a.dir/build.make CMakeFiles/cmTC_08a1a.dir/build
+Building C object CMakeFiles/cmTC_08a1a.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_08a1a.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_08a1a
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08a1a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_08a1a.dir/CheckSymbolExists.c.o -o cmTC_08a1a  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoull exist passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_91578/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_91578.dir/build.make CMakeFiles/cmTC_91578.dir/build
+Building C object CMakeFiles/cmTC_91578.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_91578.dir/CheckSymbolExists.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_91578
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91578.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_91578.dir/CheckSymbolExists.c.o -o cmTC_91578  -lm 
+
+
+File /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoull
+  return ((int*)(&strtoull))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fb276/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fb276.dir/build.make CMakeFiles/cmTC_fb276.dir/build
+Building C object CMakeFiles/cmTC_fb276.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_fb276.dir/CheckIncludeFile.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fb276
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb276.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_fb276.dir/CheckIncludeFile.c.o -o cmTC_fb276  -lm 
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f476/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4f476.dir/build.make CMakeFiles/cmTC_4f476.dir/build
+Building C object CMakeFiles/cmTC_4f476.dir/SIZEOF_INT.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_4f476.dir/SIZEOF_INT.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_4f476
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f476.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4f476.dir/SIZEOF_INT.c.o -o cmTC_4f476  -lm 
+
+
+
+Determining size of int64_t passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_706aa/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_706aa.dir/build.make CMakeFiles/cmTC_706aa.dir/build
+Building C object CMakeFiles/cmTC_706aa.dir/SIZEOF_INT64_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_706aa.dir/SIZEOF_INT64_T.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT64_T.c
+Linking C executable cmTC_706aa
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_706aa.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_706aa.dir/SIZEOF_INT64_T.c.o -o cmTC_706aa  -lm 
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cde5e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cde5e.dir/build.make CMakeFiles/cmTC_cde5e.dir/build
+Building C object CMakeFiles/cmTC_cde5e.dir/SIZEOF_LONG.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_cde5e.dir/SIZEOF_LONG.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_cde5e
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cde5e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cde5e.dir/SIZEOF_LONG.c.o -o cmTC_cde5e  -lm 
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_26d2d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_26d2d.dir/build.make CMakeFiles/cmTC_26d2d.dir/build
+Building C object CMakeFiles/cmTC_26d2d.dir/SIZEOF_LONG_LONG.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_26d2d.dir/SIZEOF_LONG_LONG.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_26d2d
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26d2d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_26d2d.dir/SIZEOF_LONG_LONG.c.o -o cmTC_26d2d  -lm 
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_51fbb/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_51fbb.dir/build.make CMakeFiles/cmTC_51fbb.dir/build
+Building C object CMakeFiles/cmTC_51fbb.dir/SIZEOF_SIZE_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_51fbb.dir/SIZEOF_SIZE_T.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_51fbb
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51fbb.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_51fbb.dir/SIZEOF_SIZE_T.c.o -o cmTC_51fbb  -lm 
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ce805/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ce805.dir/build.make CMakeFiles/cmTC_ce805.dir/build
+Building C object CMakeFiles/cmTC_ce805.dir/SIZEOF_SSIZE_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_ce805.dir/SIZEOF_SSIZE_T.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SSIZE_T.c
+Linking C executable cmTC_ce805
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce805.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ce805.dir/SIZEOF_SSIZE_T.c.o -o cmTC_ce805  -lm 
+
+
+
+Performing C SOURCE FILE Test HAVE_ATOMIC_BUILTINS succeeded with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_85c10/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_85c10.dir/build.make CMakeFiles/cmTC_85c10.dir/build
+Building C object CMakeFiles/cmTC_85c10.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_ATOMIC_BUILTINS -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_85c10.dir/src.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_85c10
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85c10.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_85c10.dir/src.c.o -o cmTC_85c10  -lm 
+
+
+Source file was:
+int main() { int i, x = 0; i = __sync_add_and_fetch(&x,1); return x; }
+Performing C SOURCE FILE Test HAVE___THREAD succeeded with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_18e16/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_18e16.dir/build.make CMakeFiles/cmTC_18e16.dir/build
+Building C object CMakeFiles/cmTC_18e16.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE___THREAD -D_GNU_SOURCE  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_18e16.dir/src.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_18e16
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18e16.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_18e16.dir/src.c.o -o cmTC_18e16  -lm 
+
+
+Source file was:
+__thread int x = 0; int main() { return 0; }
+Performing C SOURCE FILE Test REENTRANT_WORKS succeeded with the following output:
+Change Dir: /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c1559/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c1559.dir/build.make CMakeFiles/cmTC_c1559.dir/build
+Building C object CMakeFiles/cmTC_c1559.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DREENTRANT_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -fPIE -o CMakeFiles/cmTC_c1559.dir/src.c.o -c /Users/joaovictoripirajadealencar/CLionProjects/Cchat/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c1559
+/usr/local/Cellar/cmake/3.19.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1559.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c1559.dir/src.c.o -o cmTC_c1559  -lm 
+
+
+Source file was:
+
+	/* uClibc toolchains without threading barf when _REENTRANT is defined */
+	#define _REENTRANT 1
+	#include <sys/types.h>
+	int main (void)
+	{
+	  return 0;
+	}
+	
