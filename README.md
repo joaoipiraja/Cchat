@@ -1,4 +1,4 @@
-
+# Em manutenção! ⚠️
 [<img src="logo.png" width="120" />](logo.png)
 # Cchat
 Projeto- Introdução à programação- semestre 2021.1
@@ -31,7 +31,7 @@ Criar um chat utilizando o paradigma de um socket TCP/IP multithread (pthread/pt
 
 ### Servidor:
 #### 💻 gcc servidor.c -ljson-c -luuid -o servidor 
-#### Configurações iniciais:
+#### [<img src="explicacaoIlustrada/explicacao1.png"  />](explicacao1.png)
 1 - Configura o socket preenchendo a struct sockaddr_in
 ```C
 int configurarSocket(struct sockaddr_in *enderecoSocket, const char *ip, int port){
@@ -57,6 +57,8 @@ int configurarSocket(struct sockaddr_in *enderecoSocket, const char *ip, int por
         return EXIT_FAILURE;
     }
 ```
+#### [<img src="explicacaoIlustrada/explicacao2.png"  />](explicacao2.png)
+
 ## 👨🏽‍💻 Entendendo o código
 
 ## Screenshots
