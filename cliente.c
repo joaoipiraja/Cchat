@@ -12,7 +12,7 @@
 //gcc cliente.c -ljson-c -o cliente
 
 #define TAMANHO_BUFFER 2048
-#define TAMANHO_NOME 32
+#define TAMANHO_AUTENTICACAO 32
 
 volatile sig_atomic_t isInterrompido = 0;
 int descritorServidor = 0;
@@ -45,7 +45,7 @@ void sobrescrever_stdout() {
     fflush(stdout);
 }
 
-void removerCaracteresVazios (char* arr, int tamanho) {
+void removerQuebraDeLinha (char* arr, int tamanho) {
     int i;
     for (i = 0; i < tamanho; i++) {
         if (arr[i] == '\n') {
@@ -80,7 +80,7 @@ void enviarMensagem() {
     while(1) {
         sobrescrever_stdout();
         fgets(mensagem, TAMANHO_BUFFER, stdin);
-        removerCaracteresVazios(mensagem, TAMANHO_BUFFER);
+        removerQuebraDeLinha(mensagem, TAMANHO_BUFFER);
 
         if (strcmp(mensagem, "sair") == 0) {
             break;
@@ -111,8 +111,8 @@ void receberMensagem() {
     }
 }
 
-int isNomeCorreto(const char *nome){
-    return (strlen(nome) < TAMANHO_NOME || strlen(nome) > 2);
+int isDadosAutenticacaoCorreto(const char *nome, const char *senha){
+    return ((strlen(nome) < TAMANHO_AUTENTICACAO || strlen(nome) > 2) && (strlen(senha) < TAMANHO_AUTENTICACAO || strlen(senha) > 2));
 }
 
 
@@ -123,25 +123,24 @@ int main(){
     struct sockaddr_in enderecoServidor;
     pthread_t enviarMensagemThread;
     pthread_t receberMensagemThread;
-    char nome_aux[32];
-    char senha_aux[32];
+    char nome_auth[32];
+    char senha_auth[32];
 
     signal(SIGINT, sair); //permite que o processo seja interrompido através de um envio de um sinal
 
     printf("Digite o seu usuário >> ");
-    fgets(nome_aux, 32, stdin);
-    removerCaracteresVazios(nome_aux, strlen(nome_aux));
+    fgets(nome_auth, 32, stdin);
+    removerQuebraDeLinha(nome_auth, strlen(nome_auth));
 
     printf("Digite a sua senha >> ");
-    fgets(senha_aux, 32, stdin);
-    removerCaracteresVazios(senha_aux, strlen(senha_aux));
+    fgets(senha_auth, 32, stdin);
+    removerQuebraDeLinha(senha_auth, strlen(senha_auth));
 
-    strcpy(solicitacaoJSON,gerarSolicitacao(nome_aux,senha_aux));
-    strcpy(nome,extrairInformacao(solicitacaoJSON,"nome"));
-    removerCaracteresVazios(nome, strlen(nome));
-
-    if (!isNomeCorreto(nome)){
-        printf("O nome está incorreto!\n");
+    if (isDadosAutenticacaoCorreto(nome_auth,senha_auth)){
+        strcpy(solicitacaoJSON,gerarSolicitacao(nome_auth,senha_auth));
+        strcpy(nome,extrairInformacao(solicitacaoJSON,"nome"));
+    }else{
+        printf("Os dados de autenticacao estão incorretos!\n");
         return EXIT_FAILURE;
     }
 
