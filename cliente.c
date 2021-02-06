@@ -7,14 +7,34 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+#include "json-c/json.h"
+
+//gcc cliente.c -ljson-c -o cliente
 
 #define TAMANHO_BUFFER 2048
 #define TAMANHO_NOME 32
 
 volatile sig_atomic_t isInterrompido = 0;
 int descritorServidor = 0;
-char nome[TAMANHO_NOME];
+char solicitacaoJSON[TAMANHO_BUFFER];
+char nome[32];
 
+const char * extrairInformacao(char *jsonString,char *atributo ){
+
+    struct json_object *json_convertido = json_tokener_parse(jsonString);
+    struct json_object *json_atributo;
+    json_object_object_get_ex(json_convertido, (const char *) atributo, &json_atributo);
+    return json_object_get_string(json_atributo);
+}
+
+
+const char * gerarSolicitacao(char *n,char *s){
+    struct json_object *jobj;
+    jobj = json_object_new_object();
+    json_object_object_add(jobj, "nome",json_object_new_string((const char *) n));
+    json_object_object_add(jobj, "senha",json_object_new_string((const char *) s));
+    return json_object_to_json_string(jobj);
+}
 
 void sair(int sig) {
     isInterrompido = 1;
@@ -103,11 +123,21 @@ int main(){
     struct sockaddr_in enderecoServidor;
     pthread_t enviarMensagemThread;
     pthread_t receberMensagemThread;
+    char nome_aux[32];
+    char senha_aux[32];
 
     signal(SIGINT, sair); //permite que o processo seja interrompido através de um envio de um sinal
 
-    printf("Qual o seu nome? >> ");
-    fgets(nome, TAMANHO_NOME, stdin);
+    printf("Digite o seu usuário >> ");
+    fgets(nome_aux, 32, stdin);
+    removerCaracteresVazios(nome_aux, strlen(nome_aux));
+
+    printf("Digite a sua senha >> ");
+    fgets(senha_aux, 32, stdin);
+    removerCaracteresVazios(senha_aux, strlen(senha_aux));
+
+    strcpy(solicitacaoJSON,gerarSolicitacao(nome_aux,senha_aux));
+    strcpy(nome,extrairInformacao(solicitacaoJSON,"nome"));
     removerCaracteresVazios(nome, strlen(nome));
 
     if (!isNomeCorreto(nome)){
@@ -115,14 +145,14 @@ int main(){
         return EXIT_FAILURE;
     }
 
-    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1235);
+    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1247);
 
     if (conectar(&enderecoServidor,descritorServidor)) {
         printf("Houve um erro na conexão com o servidor\n");
         return EXIT_FAILURE;
     }
 
-    send(descritorServidor, nome, TAMANHO_NOME, 0); //envia o nome para o servidor
+    send(descritorServidor, solicitacaoJSON, TAMANHO_BUFFER, 0); //envia o nome para o servidor
 
     printf("---\nC CHAT\n---\n");
 
