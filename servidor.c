@@ -199,17 +199,17 @@ int main(){
     struct sockaddr_in enderecoServidor;
     struct sockaddr_in enderecoCliente;
 
-    escutaDescritor = configurarSocket(&enderecoServidor, "127.0.0.1", 1234);
+    escutaDescritor = configurarSocket(&enderecoServidor, "127.0.0.1", 1235);
     signal(SIGPIPE, SIG_IGN);
 
 
     if(bind(escutaDescritor, (struct sockaddr*)&enderecoServidor, sizeof(enderecoServidor)) < 0) {
-        perror("ERROR: Socket binding failed");
+        perror("Não foi possivel vincular o socket à porta");
         return EXIT_FAILURE;
     }
 
     if (listen(escutaDescritor, 10) < 0) {
-        perror("ERROR: Socket listening failed");
+        perror("Não foi possivel em ativar espera por novas conexões");
         return EXIT_FAILURE;
     }
 

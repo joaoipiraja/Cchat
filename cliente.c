@@ -115,7 +115,7 @@ int main(){
         return EXIT_FAILURE;
     }
 
-    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1234);
+    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1235);
 
     if (conectar(&enderecoServidor,descritorServidor)) {
         printf("Houve um erro na conexão com o servidor\n");
