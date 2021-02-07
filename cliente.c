@@ -45,9 +45,10 @@ void sobrescrever_stdout() {
     fflush(stdout);
 }
 
-void removerQuebraDeLinha (char* arr, int tamanho) {
-    int i;
-    for (i = 0; i < tamanho; i++) {
+void removerQuebraDeLinha (char* arr) {
+
+    int tamanho = strlen(arr);
+    for (int i = 0; i < tamanho; i++) {
         if (arr[i] == '\n') {
             arr[i] = '\0';
             break;
@@ -79,7 +80,7 @@ void enviarMensagem() {
     while(1) {
         sobrescrever_stdout();
         fgets(mensagem, TAMANHO_BUFFER, stdin);
-        removerQuebraDeLinha(mensagem, TAMANHO_BUFFER);
+        removerQuebraDeLinha(mensagem);
 
         if (strcmp(mensagem, "sair") == 0) {
             break;
@@ -128,21 +129,23 @@ int main(){
     signal(SIGINT, sair); //permite que o processo seja interrompido através de um envio de um sinal
 
     printf("Digite o seu usuário >> ");
-    fgets(nome_auth, TAMANHO_AUTENTICACAO], stdin);
-    removerQuebraDeLinha(nome_auth, strlen(nome_auth));
+    fgets(nome_auth, TAMANHO_AUTENTICACAO, stdin);
+    removerQuebraDeLinha(nome_auth);
 
     printf("Digite a sua senha >> ");
-    fgets(senha_auth, TAMANHO_AUTENTICACAO], stdin);
+    fgets(senha_auth, TAMANHO_AUTENTICACAO, stdin);
+    removerQuebraDeLinha(senha_auth);
 
     if (isDadosAutenticacaoCorreto(nome_auth,senha_auth)){
         strcpy(solicitacaoJSON,gerarSolicitacao(nome_auth,senha_auth));
+        printf("%s\n",solicitacaoJSON);
         strcpy(nome,extrairInformacao(solicitacaoJSON,"nome"));
     }else{
         printf("Os dados de autenticacao estão incorretos!\n");
         return EXIT_FAILURE;
     }
 
-    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1250);
+    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1254);
 
     if (conectar(&enderecoServidor,descritorServidor)) {
         printf("Houve um erro na conexão com o servidor\n");
