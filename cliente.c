@@ -65,7 +65,6 @@ int configurarSocket(struct sockaddr_in *enderecoSocket, const char *ip, int por
     enderecoSocket->sin_family = AF_INET;
     enderecoSocket->sin_addr.s_addr = inet_addr(ip);
     enderecoSocket->sin_port = htons(port);
-
     return socket(AF_INET, SOCK_STREAM, 0);
 }
 
@@ -123,18 +122,17 @@ int main(){
     struct sockaddr_in enderecoServidor;
     pthread_t enviarMensagemThread;
     pthread_t receberMensagemThread;
-    char nome_auth[32];
-    char senha_auth[32];
+    char nome_auth[TAMANHO_AUTENTICACAO];
+    char senha_auth[TAMANHO_AUTENTICACAO];
 
     signal(SIGINT, sair); //permite que o processo seja interrompido através de um envio de um sinal
 
     printf("Digite o seu usuário >> ");
-    fgets(nome_auth, 32, stdin);
+    fgets(nome_auth, TAMANHO_AUTENTICACAO], stdin);
     removerQuebraDeLinha(nome_auth, strlen(nome_auth));
 
     printf("Digite a sua senha >> ");
-    fgets(senha_auth, 32, stdin);
-    removerQuebraDeLinha(senha_auth, strlen(senha_auth));
+    fgets(senha_auth, TAMANHO_AUTENTICACAO], stdin);
 
     if (isDadosAutenticacaoCorreto(nome_auth,senha_auth)){
         strcpy(solicitacaoJSON,gerarSolicitacao(nome_auth,senha_auth));
@@ -144,7 +142,7 @@ int main(){
         return EXIT_FAILURE;
     }
 
-    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1247);
+    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1250);
 
     if (conectar(&enderecoServidor,descritorServidor)) {
         printf("Houve um erro na conexão com o servidor\n");
