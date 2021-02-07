@@ -4,7 +4,7 @@ Projeto- Introdução à programação- semestre 2021.1
 ## Objetivo
 Criar um chat utilizando o paradigma de um socket TCP/IP multithread (pthread/pthread_mutex_t)
 
-### 💻 Executar
+## 💻 Executar
 gcc servidor.c -ljson-c -luuid -o servidor | gcc cliente.c -ljson-c -o cliente
 ## Dependências:
 [json-c](https://github.com/json-c/json-c)
