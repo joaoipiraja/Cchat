@@ -5,6 +5,10 @@ Projeto- Introdução à programação- semestre 2021.1
 ## Objetivo
 Criar um chat utilizando o paradigma de um socket TCP/IP multithread (pthread/pthread_mutex_t)
 
+### 💻 Executar
+#### gcc servidor.c -ljson-c -luuid -o servidor 
+#### gcc cliente.c -ljson-c -o cliente
+
 ## Dependências:
 [json-c](https://github.com/json-c/json-c)
 | [libuuid](https://linux.die.net/man/3/libuuid)
@@ -29,10 +33,10 @@ Criar um chat utilizando o paradigma de um socket TCP/IP multithread (pthread/pt
 
 ```
 
-### Servidor:
-#### 💻 gcc servidor.c -ljson-c -luuid -o servidor 
+## 👨🏽‍💻 Entendendo o código
+
 #### [<img src="explicacaoIlustrada/explicacao1.png"  />](explicacao1.png)
-1 - Configura o socket preenchendo a struct sockaddr_in
+
 ```C
 int configurarSocket(struct sockaddr_in *enderecoSocket, const char *ip, int port){
 
@@ -43,6 +47,13 @@ int configurarSocket(struct sockaddr_in *enderecoSocket, const char *ip, int por
     return aux;
 }
 ```
+#### Servidor:
+1 - Configura o socket preenchendo a struct sockaddr_in
+
+```C
+  escutaDescritor = configurarSocket(&enderecoServidor, "127.0.0.1", 1247);
+```
+
 2 - Vincular o socket à porta 
 ```C
  if(bind(escutaDescritor, (struct sockaddr*)&enderecoServidor, sizeof(enderecoServidor)) < 0) {
@@ -57,9 +68,49 @@ int configurarSocket(struct sockaddr_in *enderecoSocket, const char *ip, int por
         return EXIT_FAILURE;
     }
 ```
-#### [<img src="explicacaoIlustrada/explicacao2.png"  />](explicacao2.png)
+#### Cliente:
 
-## 👨🏽‍💻 Entendendo o código
+1- Configura o socket preenchendo a struct sockaddr_in
+
+```C
+    descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1247);
+```
+
+#### [<img src="explicacaoIlustrada/explicacao2.png"/>](explicacao2.png)
+#### Cliente:
+```C
+if (conectar(&enderecoServidor,descritorServidor)) {
+        printf("Houve um erro na conexão com o servidor\n");
+        return EXIT_FAILURE;
+    }
+```
+#### Servidor:
+```C
+    while(1){
+
+        descritorNovaConexao = aceitarConexao(escutaDescritor,&enderecoCliente);
+
+        if((contarUsuarios + 1) == MAXIMO_USUARIOS){
+            printf("Número máximo de usuários atingido!");
+            mostrarEnderecoCliente(enderecoCliente);
+            printf(":%d\n", enderecoCliente.sin_port);
+            close(descritorNovaConexao);
+            continue;
+        }
+
+        usuario *usr = criarNovoUsuario(enderecoCliente, descritorNovaConexao);
+
+        adicionarUsuarioNaFila(usr);
+
+        if(criarNovoDialogoSimultaneo(&thread,(void*)usr)){
+            printf("Error em criar uma thread\n");
+        }
+
+        sleep(1); //reduz o uso da CPU
+    }
+    
+```
+
 
 ## Screenshots
 
