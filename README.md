@@ -1,4 +1,3 @@
-# Em manutenção! ⚠️
 [<img src="logo.png" width="120" />](logo.png)
 # Cchat
 Projeto- Introdução à programação- semestre 2021.1
