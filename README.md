@@ -169,32 +169,23 @@ int adicionarUsuario(const char *jsonString){
 
 #### [<img src="explicacaoIlustrada/1.png"/>](1.png)
 
-```C
-int configurarSocket(struct sockaddr_in *enderecoSocket, const char *ip, int port){
 
-    int aux = socket(AF_INET, SOCK_STREAM, 0);
-    enderecoSocket->sin_family = AF_INET;
-    enderecoSocket->sin_addr.s_addr = inet_addr(ip);
-    enderecoSocket->sin_port = htons(port);
-    return aux;
-}
-```
 #### Cliente:
 
-1- Configura o socket preenchendo a struct sockaddr_in
+Configura o socket preenchendo a struct sockaddr_in
 
 ```C
     descritorServidor = configurarSocket(&enderecoServidor, "127.0.0.1", 1247);
 ```
 
 #### Servidor:
-1 - Configura o socket preenchendo a struct sockaddr_in
+Configura o socket preenchendo a struct sockaddr_in
 
 ```C
   escutaDescritor = configurarSocket(&enderecoServidor, "127.0.0.1", 1247);
 ```
 
-2 - Vincular o socket à porta 
+Vincular o socket à porta 
 ```C
  if(bind(escutaDescritor, (struct sockaddr*)&enderecoServidor, sizeof(enderecoServidor)) < 0) {
         perror("Não foi possivel vincular o socket à porta");
@@ -236,6 +227,20 @@ usuario * criarNovoUsuario(struct sockaddr_in endereco, int descritor){
     usr->id = id++;
     return usr;
 }
+
+void adicionarUsuarioArray(usuario *cl){
+
+    pthread_mutex_lock(&UsuariosMutex);
+
+    for(int i=0; i < MAXIMO_USUARIOS; ++i){
+        if(!usuarios[i]){
+            usuarios[i] = cl;
+            break;
+        }
+    }
+
+    pthread_mutex_unlock(&UsuariosMutex);
+}
 ```
 
 ```C
@@ -258,7 +263,7 @@ int criarNovoDialogoSimultaneo(pthread_t *novaThread, void *usr){
 
         usuario *usr = criarNovoUsuario(enderecoCliente, descritorNovaConexao);
 
-        adicionarUsuarioNaFila(usr);
+        adicionarUsuarioArray(usr);
 
         if(criarNovoDialogoSimultaneo(&thread,(void*)usr)){
             printf("Error em criar uma thread\n");
@@ -269,8 +274,222 @@ int criarNovoDialogoSimultaneo(pthread_t *novaThread, void *usr){
     
 ```
 #### [<img src="explicacaoIlustrada/3.png"  />](3.png)
-#### [<img src="explicacaoIlustrada/4.png"  />](4.png)
+#### Cliente:
 
+```C
+ printf("Digite o seu usuário >> ");
+    fgets(nome_auth, TAMANHO_AUTENTICACAO], stdin);
+    removerQuebraDeLinha(nome_auth, strlen(nome_auth));
+
+    printf("Digite a sua senha >> ");
+    fgets(senha_auth, TAMANHO_AUTENTICACAO], stdin);
+
+    if (isDadosAutenticacaoCorreto(nome_auth,senha_auth)){
+        strcpy(solicitacaoJSON,gerarSolicitacao(nome_auth,senha_auth));
+        strcpy(nome,extrairInformacao(solicitacaoJSON,"nome"));
+    }else{
+        printf("Os dados de autenticacao estão incorretos!\n");
+        return EXIT_FAILURE;
+    }
+```
+```C
+    send(descritorServidor, solicitacaoJSON, TAMANHO_BUFFER, 0); //envia o nome para o servidor
+```
+#### Servidor:
+```C
+void enviarMensagemParticular(const char *mensagem, int descritor){
+    pthread_mutex_lock(&UsuariosMutex);
+
+    if(write(descritor, (char *) mensagem, strlen(mensagem)) < 0){
+        perror("Erro ao enviar mensagem!\n");
+    }
+
+    pthread_mutex_unlock(&UsuariosMutex);
+}
+
+```
+```C
+void enviarMensagemParaOutros(char *mensagem, int id){
+    //Envia um mensagem a todos os usuarios conectados, menos o com id informado
+    pthread_mutex_lock(&UsuariosMutex);
+
+    for(int i=0; i<MAXIMO_USUARIOS; ++i){
+        if(usuarios[i]){
+            if(usuarios[i]->id != id){
+                if(write(usuarios[i]->descritor, mensagem, strlen(mensagem)) < 0){
+                    perror("Erro ao enviar mensagem!\n");
+                    break;
+                }
+            }
+        }
+    }
+
+```
+```C
+void *conversarComUsuario(void *arg){
+    char bufferSaida[TAMANHO_BUFFER];
+    char autenticaoUsuario[TAMANHO_BUFFER];
+    int sair = 0;
+
+    contarUsuarios++;
+    usuario *usr = (usuario *)arg;
+
+    if(recv(usr->descritor,autenticaoUsuario, TAMANHO_BUFFER, 0) <= 0){
+        printf("Houve um problema na autenticação do usuario!");
+        sair = 1;
+    } else{
+        printf("%s\n",autenticaoUsuario);
+
+        int codigoValidacao = validarUsuario((const char *)&autenticaoUsuario);
+        printf("%d\n",codigoValidacao);
+
+        strcpy(usr->nome,extrairInformacao((const char *)&autenticaoUsuario, "nome"));
+
+        if(codigoValidacao  == 3){
+            sprintf(bufferSaida, "%s entrou no chat\n", usr->nome);
+            printf("%s", bufferSaida);
+            enviarMensagemParaOutros(bufferSaida, usr->id);
+        }else if(codigoValidacao  == 2){
+
+            enviarMensagemParticular("A senha está incorreta!(ACESSO NEGADO)\n", usr->descritor);
+            sair = 1;
+
+        }else if(codigoValidacao  == 1){
+            adicionarUsuario((const char *)&autenticaoUsuario);
+            sprintf(bufferSaida, "%s, seja bem vindo(a)!\n", usr->nome);
+            printf("%s", bufferSaida);
+            enviarMensagemParaOutros(bufferSaida, usr->id) ;
+        }
+
+    }
+
+    bzero(bufferSaida, TAMANHO_BUFFER); //limpa o buffer
+    bzero(autenticaoUsuario, TAMANHO_BUFFER);
+
+```
+
+
+#### [<img src="explicacaoIlustrada/4.png"  />](4.png)
+#### Cliente:
+```C
+void enviarMensagem() {
+    char mensagem[TAMANHO_BUFFER] = {};
+    char buffer[TAMANHO_BUFFER + 32] = {};
+
+    while(1) {
+        sobrescrever_stdout();
+        fgets(mensagem, TAMANHO_BUFFER, stdin);
+        removerQuebraDeLinha(mensagem, TAMANHO_BUFFER);
+
+        if (strcmp(mensagem, "sair") == 0) {
+            break;
+        } else {
+            sprintf(buffer, "%s: %s\n", nome, mensagem);
+            send(descritorServidor, buffer, strlen(buffer), 0);
+        }
+
+        bzero(mensagem, TAMANHO_BUFFER);
+        bzero(buffer, TAMANHO_BUFFER + 32);
+    }
+    sair(2);
+}
+```
+```C
+void receberMensagem() {
+    char mensagem[TAMANHO_BUFFER] = {};
+    while (1) {
+
+        int recebido = recv(descritorServidor, mensagem, TAMANHO_BUFFER, 0);
+        if (recebido > 0) {
+            printf("%s", mensagem);
+            sobrescrever_stdout();
+        } else if (recebido == 0) {
+            break;
+        }
+
+        memset(mensagem, 0, sizeof(mensagem));
+    }
+}
+```
+```C
+   if(criarThread(&enviarMensagemThread, (void *) enviarMensagem)){
+        printf("Error em criar uma thread para enviar as mensagens\n");
+        return EXIT_FAILURE;
+    }
+
+    if(criarThread(&receberMensagemThread, (void *)receberMensagem)){
+        printf("Error em criar uma thread para receber as mensagens\n");
+        return EXIT_FAILURE;
+    }
+    
+```
+#### Servidor:
+
+```C
+void removerUsuarioArray(int id){
+
+    //remover usuario apartir do seu id
+
+    pthread_mutex_lock(&UsuariosMutex);
+
+    for(int i=0; i < MAXIMO_USUARIOS; ++i){
+        if(usuarios[i]){
+            if(usuarios[i]->id == id){
+                usuarios[i] = NULL;
+                break;
+            }
+        }
+    }
+
+    pthread_mutex_unlock(&UsuariosMutex);
+}
+
+
+```
+```C
+void removerUsuario(usuario *usr){
+
+    close(usr->descritor);
+    removerUsuarioArray(usr->id);
+    free(usr);
+    contarUsuarios--;
+    pthread_detach(pthread_self());
+}
+
+```
+```C
+  while(1){
+        if (sair) {
+            break;
+        }
+
+        int recebido = recv(usr->descritor, bufferSaida, TAMANHO_BUFFER, 0);
+        if (recebido > 0){
+            if(strlen(bufferSaida) > 0){
+                enviarMensagemParaOutros(bufferSaida, usr->id);
+                removerQuebraDeLinha(bufferSaida, strlen(bufferSaida));
+                printf("%s\n", bufferSaida);
+            }
+        } else if (recebido == 0 || strcmp(bufferSaida, "sair") == 0){
+            sprintf(bufferSaida, "%s saiu do chat\n", usr->nome);
+            printf("%s", bufferSaida);
+            enviarMensagemParaOutros(bufferSaida, usr->id);
+            sair = 1;
+        } else {
+            printf("Error -1\n");
+            sair = 1;
+        }
+
+        bzero(bufferSaida, TAMANHO_BUFFER);
+    }
+
+    //Exclui os usuarios da fila de execução paralela
+    removerUsuario(usr);
+
+    return NULL;
+}
+
+```
 
 ## Screenshots
 
