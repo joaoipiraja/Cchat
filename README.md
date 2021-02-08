@@ -189,7 +189,7 @@ Vincular o socket à porta
         return EXIT_FAILURE;
     }
 ```
-3 - Colocar o socket em modo de espera para possíveis conexões
+Colocar o socket em modo de espera para possíveis conexões
 ```C
  if (listen(escutaDescritor, 10) < 0) {
         perror("Não foi possivel em ativar espera por novas conexões");
