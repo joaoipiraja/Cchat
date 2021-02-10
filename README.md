@@ -12,7 +12,8 @@ gcc servidor.c -ljson-c -luuid -o servidor | gcc cliente.c -ljson-c -o cliente
 
 ## 👨🏽‍💻 Entendendo o código
 
-### Persistindo dados de autenticação
+### 📘  Persistindo dados de autenticação  
+
 #### [<img src="explicacaoIlustrada/5.png"  />](5.png)
 
 #### formato:
@@ -162,7 +163,7 @@ int adicionarUsuario(const char *jsonString){
 }
 
 ```
-### Socket Multithread
+### 🌎 Socket Multithread
 
 
 #### [<img src="explicacaoIlustrada/1.png"/>](1.png)
