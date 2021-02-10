@@ -162,6 +162,7 @@ int adicionarUsuario(const char *jsonString){
 }
 
 ```
+### Socket Multithread
 
 
 #### [<img src="explicacaoIlustrada/1.png"/>](1.png)
