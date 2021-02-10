@@ -214,7 +214,8 @@ typedef struct{
     struct sockaddr_in endereco;
     int descritor;
 } usuario;
-
+```
+```C
 usuario *usuarios[MAXIMO_USUARIOS];
 
 usuario * criarNovoUsuario(struct sockaddr_in endereco, int descritor){
@@ -238,6 +239,14 @@ void adicionarUsuarioArray(usuario *cl){
 
     pthread_mutex_unlock(&UsuariosMutex);
 }
+````
+```C
+int aceitarConexao(int escutaDescritor, struct sockaddr_in *enderecoCliente){
+    socklen_t t_aux = sizeof(enderecoCliente);
+    return accept(escutaDescritor, (struct sockaddr*) enderecoCliente, &t_aux);
+}
+
+
 ```
 
 ```C
@@ -274,7 +283,28 @@ int criarNovoDialogoSimultaneo(pthread_t *novaThread, void *usr){
 #### Cliente:
 
 ```C
- printf("Digite o seu usuário >> ");
+const char * gerarSolicitacao(char *n,char *s){
+    struct json_object *jobj;
+    jobj = json_object_new_object();
+    json_object_object_add(jobj, "nome",json_object_new_string((const char *) n));
+    json_object_object_add(jobj, "senha",json_object_new_string((const char *) s));
+    return json_object_to_json_string(jobj);
+}
+const char * extrairInformacao(char *jsonString,char *atributo ){
+
+    struct json_object *json_convertido = json_tokener_parse(jsonString);
+    struct json_object *json_atributo;
+    json_object_object_get_ex(json_convertido, (const char *) atributo, &json_atributo);
+    return json_object_get_string(json_atributo);
+}
+```
+```C
+int isDadosAutenticacaoCorreto(const char *nome, const char *senha){
+    return ((strlen(nome) < TAMANHO_AUTENTICACAO || strlen(nome) > 2) && (strlen(senha) < TAMANHO_AUTENTICACAO || strlen(senha) > 2));
+}
+```
+```C
+    printf("Digite o seu usuário >> ");
     fgets(nome_auth, TAMANHO_AUTENTICACAO], stdin);
     removerQuebraDeLinha(nome_auth, strlen(nome_auth));
 
@@ -322,6 +352,7 @@ void enviarMensagemParaOutros(char *mensagem, int id){
     }
 
 ```
+##### Nova rotina criada pela Thread
 ```C
 void *conversarComUsuario(void *arg){
     char bufferSaida[TAMANHO_BUFFER];
@@ -368,6 +399,7 @@ void *conversarComUsuario(void *arg){
 
 #### [<img src="explicacaoIlustrada/4.png"  />](4.png)
 #### Cliente:
+
 ```C
 void enviarMensagem() {
     char mensagem[TAMANHO_BUFFER] = {};
